@@ -2,6 +2,7 @@ language: scala
 sudo: false
 script:
 - sbt test scripted
+- git diff --exit-code
 jdk:
   - oraclejdk8
 cache:
